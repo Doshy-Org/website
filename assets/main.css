@@ -1,0 +1,258 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: white;
+    font-family:'Montserrat','Roboto', Charcoal, sans-serif;
+    animation: fadein 0.3s;
+    -moz-animation: fadein 0.3s; /* Firefox */
+    -webkit-animation: fadein 0.3s; /* Safari and Chrome */
+    -o-animation: fadein 0.3s; /* Opera */
+  }
+  ul.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 99;
+    transition: 0.3s;
+  }
+  li.nav{
+    float:left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+  }
+  li.nav a{
+    text-decoration: none;
+    color: black;
+  }
+  .disabled{
+    background-color: white !important; 
+    color: black !important;
+  }
+  li.nav:hover{
+    background-color: #FE9400;
+    color: white;
+  }
+  li.selected{
+    background-color: #FE9400;
+    color: white;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+  .wide{
+    width: 100%;
+  }
+  .centercontain{
+    background-color: white;
+  }
+  .top{
+    width: 100%;
+    padding: 20px;
+    background-image: url('background.png');
+    background-size: cover;
+    overflow: hidden;
+  }
+  .top2{
+    padding: 34vh;
+    background-image: url('hexbg.png');
+    background-size: cover;
+    overflow: hidden;
+  }
+  .top3{
+    padding: 20px;
+    background-image: url('3.png');
+    background-size: cover;
+    overflow: hidden;
+  }
+  .top4{
+    padding: 20px;
+    background-image: url('4.png');
+    background-size: cover;
+    overflow: hidden;
+  }
+  .blank{
+    padding: 20px;
+  }
+  .title{
+    margin: 15%;
+    color: white;
+    font-size: 5em;
+  }
+  .titlehome{
+    margin: 2% 15% 2% 15%;
+    color: white;
+    font-size: 5em;
+  }
+  .righttitle{
+    margin: 10%;
+    margin-left: 45%;
+    font-size: 1.7em;
+  }
+  .h2{
+    font-size: 3em;
+  }
+  .content{
+    width: 80%;
+    margin-top: 30px;
+  }
+  h2{
+    font-size: 2em;
+  }
+  p{
+    font-size: 1.2em;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100% !important;
+  }
+  .profile{
+    margin-top: 25% !important;
+  }
+  .title{
+    font-size: 3em !important;
+  }
+  .titlehome{
+    font-size: 3em !important;
+  }
+  .top2{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .subtitle{
+    font-size: 1em !important;
+    padding: 10px;
+  }
+  li.nav{
+    padding: 7px;
+  }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.selectBlock{
+    display: inline-block;
+    margin: 3px;
+    border-radius: 10px;
+    padding: 3px;
+    transition: background-color 0.5s ease;
+  }
+
+  ul.color{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  ul.color > li{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    padding-left: 10px;
+    margin-right: 7px;
+    margin-bottom:3px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+
+.full{
+  padding: 4em;
+  width: 100%;
+}
+.list{
+  background-color: dodgerblue;
+  text-decoration: none;
+
+  border: none;
+  padding: 7px;
+  border-radius: 15px;
+  color: white;
+  margin: 3px;
+  outline: none;
+  transition: background-color 0.5s ease;
+}
+.list:hover{
+    background-color: #d9d9d9;
+    color: black;
+}
+
+ul.bullets > li{
+  font-size: 1.2em;
+  padding: 0.4%;
+}
+ul.bullets2 >li{
+  font-size: 1.2em;
+  padding: 0.6%;
+  margin-left: 1%;
+}
+
+.carousel-cell {
+  width: 90%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-img{
+  width: 100%;
+  height: auto;
+}
