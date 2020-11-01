@@ -38,11 +38,11 @@ body, html {
     color: black !important;
   }
   li.nav:hover{
-    background-color: #FE9400;
+    background-color: #CCE676;
     color: white;
   }
   li.selected{
-    background-color: #FE9400;
+    background-color: #CCE676;
     color: white;
   }
 
@@ -57,26 +57,26 @@ body, html {
   }
   .top{
     width: 100%;
-    padding: 20px;
-    background-image: url('background.png');
+    padding: 20vh;
+    background-image: url('bg1.png');
     background-size: cover;
     overflow: hidden;
   }
   .top2{
     padding: 34vh;
-    background-image: url('hexbg.png');
+    background-image: url('bg2.png');
     background-size: cover;
     overflow: hidden;
   }
   .top3{
     padding: 20px;
-    background-image: url('3.png');
+    background-image: url('bg3.png');
     background-size: cover;
     overflow: hidden;
   }
   .top4{
     padding: 20px;
-    background-image: url('4.png');
+    background-image: url('bg4.png');
     background-size: cover;
     overflow: hidden;
   }
