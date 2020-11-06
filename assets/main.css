@@ -256,3 +256,22 @@ ul.bullets2 >li{
   width: 100%;
   height: auto;
 }
+button{
+  border-style: ridge;
+  border-color: #CCE676;
+  background: white;
+  font-family:'Montserrat','Roboto', Charcoal, sans-serif;
+  font-size: 1.25em;
+  text-align: left;
+  padding: 7px;
+  border-radius: 15px;
+  color: black;
+  margin: 3px;
+  outline: none;
+  transition: background-color 0.5s ease;
+  /*transition-duration: 0.3s;*/
+}
+button:hover {
+  background-color: #CCE676; /* Green */
+  color: black;
+}
