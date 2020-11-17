@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doshy</title>
+   <meta name="viewport" content="width=device-width,maximum-scale=0.9" />
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <link rel="icon" href="assets/profile.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <script src="assets/anime.min.js"></script>
+</head>
+<style type="text/css">
+	body,html{
+		margin: 0px;
+		padding: 0px;
+		overflow-x: hidden;
+	}
+	.bgline{
+		height: 2px;
+		background-color: lightgrey;
+		width: 2px;
+		position: absolute;
+		opacity: 0.4;
+	}
+	.bglineVert{
+		height: 2px;
+		background-color: lightgrey;
+		width: 2px;
+		position: absolute;
+		opacity: 0.4;
+	}
+</style>
+
+<body>
+	<div>
+		
+	</div>
+ 	<div class="bgline"></div>
+
+	<div class="bglineVert"></div>
+
+ 	<script type="text/javascript">
+
+ 		var vh = window.innerHeight;
+ 		var vw = window.innerWidth;
+ 		
+
+ 		for (var i = 0; i <vh; i+=100) {
+ 			var temp = document.createElement("div");
+ 			temp.classList.add("bgline");
+ 			temp.style.top = i+"px";
+ 			document.body.appendChild(temp);
+ 		}
+
+		for (var i = 0; i <vw; i+=100) {
+ 			var temp = document.createElement("div");
+ 			temp.classList.add("bglineVert");
+ 			temp.style.left = i+"px";
+ 			document.body.appendChild(temp);
+ 		}
+
+
+ 		anime({
+ 			targets: '.bgline',
+ 			width:vw,
+ 			duration: 2000,
+ 			easing: 'easeInOutExpo',
+ 			delay: anime.stagger(100)
+ 		});
+
+ 		anime({
+ 			targets: '.bglineVert',
+ 			height:vh,
+ 			duration: 2000,
+ 			easing: 'easeInOutExpo',
+ 			delay: anime.stagger(100)
+ 		});
+ 	</script>
+</body>
+
+</html>
