@@ -89,7 +89,6 @@
  		var left = (vw-1200);
 
  		var squares = parseInt((vw-1200)/100);
- 		console.log(squares);
 
  		if(squares%2 != 0){
  			left = ((vw%100)+100)/2
@@ -97,6 +96,7 @@
  		else{
  			left= (vw%100)/2;
  		}
+
 
  		for (var i = 0; i <vh; i+=100) {
  			var temp = document.createElement("div");
@@ -112,6 +112,7 @@
  			document.body.appendChild(temp);
  		}
 
+ 		document.getElementById('doshytext').style.top = 100*(parseInt((vh/100)/2-2))+"px";
  		document.getElementById('doshytext').style.left = 100*parseInt(squares/2)+(left)+"px";
 
  		anime({
