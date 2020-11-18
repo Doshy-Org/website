@@ -42,16 +42,16 @@
 	
 		color: #51638a;
 	}
-	.link{
+	a{
 		text-decoration: underline;
 		transition: 0.5s;
 	}
-	.link:hover{
+	a:hover{
 		cursor: pointer;
 		color: dodgerblue;
 	}
 	.box{
-		background-color: lightgrey;
+		background-color: #F5F5F5;
 		width: 100px;
 		height: 100px;
 		position: absolute;
@@ -62,7 +62,7 @@
 
 	<p class="sub" id = "coming">Coming Soon</p>
 	
-	<p class="sub link" id="slides"><a href="https://slides.doshy.org">Slides Background</a></p>
+	<p class="sub" id="slides"><a href="https://slides.doshy.org">Slides Background</a></p>
 
 	<div class="box" id="box"></div>
 
@@ -140,6 +140,8 @@
  		}
  		var titletop = 100*(parseInt((vh/100)/2-2));
  		var titleleft = 100*parseInt(squares/2)+(left);
+
+
  		document.getElementById('doshytext').style.top = titletop+ "px";
  		document.getElementById('doshytext').style.left = titleleft+ "px";
 
@@ -175,14 +177,14 @@
 		  easing: 'easeInOutSine',
 		  duration: 2000,
 		  delay: function(el, i) { return i * 250 },
-			
 		});
 
+		var verticalbox = 100*parseInt(vh/100);
 		var boxanim = anime({
 		  targets: '.box',
 		  keyframes: [
 		    {translateX: 1500},
-		    {translateY: 700},
+		    {translateY: verticalbox-100},
 		    {translateX: 0},
 		    {translateY: 0}
 		  ],
