@@ -136,26 +136,28 @@
  		}
 
 
- 		for (var i = 0; i <vh; i+=100) {
+ 		for (var i = 0; i <vh; i+=100) {  //generate cols 100px apart
  			var temp = document.createElement("div");
  			temp.classList.add("bgline");
  			temp.style.top = i+"px";
  			document.body.appendChild(temp);
  		}
 
-		for (var i = left; i <vw; i+=100) {
+		for (var i = left; i <vw; i+=100) { //generate rows
  			var temp = document.createElement("div");
  			temp.classList.add("bglineVert");
  			temp.style.left = i+"px";
  			document.body.appendChild(temp);
  		}
+ 		//calculate middle/svg height
  		var titletop = 100*(parseInt((vh/100)/2-2));
  		var titleleft = 100*parseInt(squares/2)+(left);
 
 
  		document.getElementById('doshytext').style.top = titletop+ "px";
- 		document.getElementById('doshytext').style.left = titleleft+ "px";
+ 		document.getElementById('doshytext').style.left = titleleft+ "px"; 
 
+ 		//calculate text height
  		var textoffset = 459;
  		document.getElementById('coming').style.top = titletop+textoffset+"px";
  		document.getElementById('coming').style.left = titleleft+"px";
@@ -196,6 +198,8 @@
 		document.getElementById('box2').style.left = titleleft+1300+"px";
 		document.getElementById('box2').style.top = verticalbox-100+"px"; //init box 2
 
+		
+		//both boxes
 		var boxanim = anime({
 		  targets: '.box',
 		  keyframes: [
